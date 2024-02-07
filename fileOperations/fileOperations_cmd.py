@@ -33,8 +33,6 @@ Change History:
 02/06/24    Gagan J Singh   Implemented functionality to support all functionality of this package.
 
 """
-# import sys
-# sys.path.append('../')
 
 import argparse
 import create_file
@@ -72,7 +70,7 @@ def main():
     if args.command is None:
         parser.print_help()
         return
-    print("all is fine")
+
     try:
         if args.command == "create":
             create_file.create_file(args.filename, args.text)
