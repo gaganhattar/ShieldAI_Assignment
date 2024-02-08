@@ -29,7 +29,7 @@ ShieldAI_Assignment
 │  └── run_all_unit_tests.sh
 │
 ├── util/
-│  ├── function_tests
+│  ├── functional_tests
 │  │    ├── test_fileOperations_cmd_exe.py
 │  │    └── test_pkg_install_uninstall.py
 │  │
@@ -57,12 +57,12 @@ ShieldAI_Assignment
 4. **.gitignore**: specify certain build or py auto-generated like __pycache__ to not tracked by git and remain untracked for commits.
 5. **README.md**: this file, describing the file structure and various utilities build, generate and use the **fileOperations_cmd** executable on commandline.
 
-# Dependancies 
+## Dependancies 
 - **python 3.8 or newer**
 - **pyinstaller**: This package is needed for generating the executable **fileOperations_cmd**
 - **dpkg and dpkg-deb**: Package manager to install and un-install .deb packages, as well building .deb package.
 
-# Installing the production ***shieldai.assignment_1.0_all.deb***
+## Installing the production ***shieldai.assignment_1.0_all.deb***
 - Latest build is available in **util** folder
    - Run `sudo dpkg -i shieldai.assignment_1.0_all.deb`: this will install **fileOperations_cmd** executable in **/usr/local/bin**. The command is readily usable on new terminal launch after the installation. Use `fileOperations_cmd -h`
 - Useful commads are:
@@ -75,28 +75,32 @@ ShieldAI_Assignment
    - All modules in **File_Operation** at **/opt/shieldai_assignment/lib**
    - **Readme.md** in **/opt/shieldai_assignment/doc**
 
-# Generating or Building production ***shieldai.assignment_1.0_all.deb***
+## Generating or Building production package ***shieldai.assignment_1.0_all.deb***
 - Although the package is avaialable in **util** folder, it's advisable to build the package at your system. The command to generate package are
    - Change directory to utils `cd utils`
    - Run `python3 create_package.py -d` to generate **shieldai.assignment_1.0_all.deb**
 
-## How to 
-python create_file.py new_file.txt -t "optional text"
-python copy_file.py source_file.txt destination_file.txt
-python combine_files.py file1.txt file2.txt output.txt
-python delete_file.py file_to_delete.txt
+## Installing the test package ***shieldai.assignment.tests_1.0_all.deb***
+- The purpose of this package is running the unit tests and funstional tests on target production environment. The pre-built package is available at **utils** folder.
+   - Run `sudo dpkg -i shieldai.assignment.tests_1.0_all.deb`
+   - Installed files are:
+      - **fileOperations_cmd** in **/usr/local/bin**
+      - All modules in **file_Operation** at **/opt/shieldai_assignment/lib**
+      - All unit and functional scripts in **unit_tests** and **utils/functiona_tests** at **/opt/shieldai_assignment/tests**
+      - **Readme.md** in **/opt/shieldai_assignment/doc**
 
-python main.py --help
-python create_file.py --help
-python copy_file.py --help
-python combine_files.py --help
-python delete_file.py --help
+## Generating or Building test package ***shieldai.assignment.tests_1.0_all.deb***
+- Although the package is avaialable in **util** folder, it's advisable to build the package at your system. The command to generate package are
+   - Change directory to utils `cd utils`
+   - Run `python3 create_package.py -t` to generate **shieldai.assignment.tests_1.0_all.deb**
+
+
 
 ## How to Use
 
-1. **Running Main Script**:
-   - Run `python main.py --help` to see available commands and options.
-   - Example: `python main.py create new_file.txt -t "optional text"`
+1. **Running fileOperations_cmd Script**:
+   - Run `python fileOperations_cmd.py --help` to see available commands and options.
+   - Example: `python fileOperations_cmd.py create new_file.txt -t "optional text"`
 
 2. **Running Tests**:
    - Navigate to the `tests` directory.

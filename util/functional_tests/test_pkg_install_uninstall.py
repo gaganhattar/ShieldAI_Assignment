@@ -36,10 +36,6 @@ Change History:
 
 """
 
-import sys
-# This is for py not to generate __pycache__, so that the files can be uninstalled properly
-sys.dont_write_bytecode = True 
-
 import unittest
 import subprocess
 import os

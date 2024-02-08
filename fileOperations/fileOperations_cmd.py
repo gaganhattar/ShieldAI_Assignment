@@ -35,6 +35,7 @@ Change History:
 """
 import sys
 sys.path.append('/opt/shieldai_assignment/lib')
+sys.path.append('../fileOperations')
 
 import argparse
 import create_file
