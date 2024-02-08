@@ -7,6 +7,7 @@ File Operations Package is a Python package that provides functionality to perfo
 - **Code download**: Download zip file from the "Code" button dropdown at https://github.com/gaganhattar/ShieldAI_Assignment
 
 # Modular Python3 Filesystem Structure:
+```
 ShieldAI_Assignment
 │──File_Operation/
 │  │
@@ -37,6 +38,7 @@ ShieldAI_Assignment
 ├── .gtignore
 │
 └── README.md
+```
 
 
 ## File Structure
