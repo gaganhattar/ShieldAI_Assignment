@@ -4,7 +4,8 @@ File Operations Package is a Python package that provides functionality to perfo
 
 # How to get code (github)
 
-- **git clone command** : Run `git clone https://github.com/gaganhattar/ShieldAI_Assignment.git` command at a suitable location of your computer.
+- **git clone command** : Run command below to create workspace for this code on your computer.
+   Run `git clone https://github.com/gaganhattar/ShieldAI_Assignment.git` 
 - **Code download**: Download zip file from the "Code" button dropdown at https://github.com/gaganhattar/ShieldAI_Assignment
 
 # Modular Python3 Filesystem Structure:
