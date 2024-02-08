@@ -223,7 +223,7 @@ def create():
     
     if args.deb:
         cleanup_build();
-        #copy_python_files_to_dist()
+        copy_python_files_to_dist()
         copy_readme_to_share_doc()
         create_deb_package()
         cleanup_build();

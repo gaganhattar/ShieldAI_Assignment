@@ -21,10 +21,10 @@ This script provides functionality to perform various file operations such as cr
 Usage:
     To perform file operations:
     ```bash
-    python main.py create new_file.txt -t "optional text"
-    python main.py copy source_file.txt destination_file.txt
-    python main.py combine file1.txt file2.txt output.txt
-    python main.py delete file_to_delete.txt
+    python fileOperation_cmd.py create new_file.txt -t "optional text"
+    python fileOperation_cmd.py copy source_file.txt destination_file.txt
+    python fileOperation_cmd.py combine file1.txt file2.txt output.txt
+    python fileOperation_cmd.py delete file_to_delete.txt
     ```
 
 Author: Gagan J Singh

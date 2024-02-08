@@ -69,12 +69,11 @@ class TestFileOperationsDebPackageFunction(unittest.TestCase):
             result = subprocess.run(["dpkg", "-l", "shieldai.assignment"], stdout=subprocess.PIPE, stderr=subprocess.PIPE, encoding="utf-8")
             self.assertIn("shieldai.assignment", result.stdout)
 
-            # Check if all the expected files are installed
-            #expected_files = ["copy_file.py", "combine_files.py", "delete_file.py", "create_file.py"]
-                              #"test_copy_file.py", "test_combine_files.py", "test_delete_file.py", "test_main.py"]
-            
-            #for file in expected_files:
-            #self.assertTrue(os.path.exists(f"/opt/shieldai_assignment/lib/{file}"))
+            #Check if all the expected lib files are installed
+            expected_lib_files = ["copy_file.py", "combine_files.py", "delete_file.py", "create_file.py"]
+            for file in expected_lib_files:
+                self.assertTrue(os.path.exists(f"/opt/shieldai_assignment/lib/{file}"))
+             
             self.assertTrue(os.path.exists(f"/opt/shieldai_assignment/doc/Readme.md"));
         except Exception as e:
             self.fail(f"Failed Test during install package: {e}")
@@ -92,6 +91,7 @@ class TestFileOperationsDebPackageFunction(unittest.TestCase):
             # Check if all the expected files are removed
             print("*****************   Checking Uninstallation  *****************")
             self.assertFalse(os.path.exists(f"/usr/local/bin/fileOperations_cmd"))
+            self.assertFalse(os.path.exists(f"/opt/shieldai_assignment/lib"))  
             self.assertFalse(os.path.exists(f"/opt/shieldai_assignment/doc/Readme.md"))
         except Exception as e:
             self.fail(f"Failed to uninstall package: {e}")     
