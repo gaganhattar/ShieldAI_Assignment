@@ -1,4 +1,7 @@
 .fileOperations/__pycache__
 .fileOperations/build
 .fileOperations/dist
+__pycache__
+*.py[cod]
+*$py.class
 .Readme2.md

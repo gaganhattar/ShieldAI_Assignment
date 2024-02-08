@@ -38,5 +38,7 @@ python3 -m unittest test_create_file.py
 python3 -m unittest test_copy_file.py
 python3 -m unittest test_delete_file.py
 
+find . -regex '^.*\(__pycache__\|\.py[co]\)$' -delete
+
 
 

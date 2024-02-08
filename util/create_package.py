@@ -47,6 +47,9 @@ import subprocess
 from io import StringIO
 import sys
 
+# This is for py not to generate __pycache__, so that the files can be uninstalled properly
+sys.dont_write_bytecode = True 
+
 def create_python_executable():
     """Create Python executable using pyinstaller."""
     try:

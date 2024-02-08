@@ -33,6 +33,8 @@ Change History:
 02/06/24    Gagan J Singh   Implemented functionality to support all functionality of this package.
 
 """
+import sys
+sys.path.append('/opt/shieldai_assignment/lib')
 
 import argparse
 import create_file
