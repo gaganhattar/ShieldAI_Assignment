@@ -1,6 +1,6 @@
 # Introduction
 
-File Operations Package is a Python package that provides functionality to perform various file operations such as create, copy, combine, and delete files. The package also contain various unit tests and functional tests to validate code and functionality on the target system. The package was implemented as part of **interview stage with ShieldAI**.
+File Operations Package is a Python package that provides functionality to perform various file operations such as create, copy, combine, and delete files. The package also contain various unit tests and functional tests to validate code and functionality on the target system. The package was implemented as part of an **interview stage with ShieldAI**.
 
 # How to get code (github)
 
