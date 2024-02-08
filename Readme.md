@@ -7,7 +7,7 @@ File Operations Package is a Python package that provides functionality to perfo
 - **git clone command** : Run `git clone https://github.com/gaganhattar/ShieldAI_Assignment.git` command at a suitable location of your computer.
 - **Code download**: Download zip file from the "Code" button dropdown at https://github.com/gaganhattar/ShieldAI_Assignment
 
-## Modular Python3 Filesystem Structure:
+# Modular Python3 Filesystem Structure:
 
 ```
 ShieldAI_Assignment
@@ -66,7 +66,7 @@ ShieldAI_Assignment
 - **pyinstaller**: This package is needed for generating the executable **fileOperations_cmd**
 - **dpkg and dpkg-deb**: Package manager to install and un-install .deb packages, as well building .deb package.
 
-## Installing the production ***shieldai.assignment_1.0_all.deb***
+## Installing the production package
 
 - Latest build is available in **util** folder
    - Run `sudo dpkg -i shieldai.assignment_1.0_all.deb`: this will install **fileOperations_cmd** executable in **/usr/local/bin**. The command is readily usable on new terminal launch after the installation. Use `fileOperations_cmd -h`
@@ -80,13 +80,13 @@ ShieldAI_Assignment
    - All modules in **File_Operation** at **/opt/shieldai_assignment/lib**
    - **Readme.md** in **/opt/shieldai_assignment/doc**
 
-## Generating or Building production package ***shieldai.assignment_1.0_all.deb***
+## Generating or Building production package
 
 - Although the package is avaialable in **util** folder, it's advisable to build the package at your system. The command to generate package are
    - Change directory to utils `cd utils`
    - Run `python3 create_package.py -d` to generate **shieldai.assignment_1.0_all.deb**
 
-## Installing the test package ***shieldai.assignment.tests_1.0_all.deb***
+## Installing the test package
 
 - The purpose of this package is running the unit tests and funstional tests on target production environment. The pre-built package is available at **utils** folder.
    - Run `sudo dpkg -i shieldai.assignment.tests_1.0_all.deb`
@@ -96,7 +96,7 @@ ShieldAI_Assignment
       - All unit and functional scripts in **unit_tests** and **utils/functiona_tests** at **/opt/shieldai_assignment/tests**
       - **Readme.md** in **/opt/shieldai_assignment/doc**
 
-## Generating or Building test package ***shieldai.assignment.tests_1.0_all.deb***
+## Generating or Building test package
 
 - Although the package is avaialable in **util** folder, it's advisable to build the package at your system. The command to generate package are
    - Change directory to utils `cd utils`
